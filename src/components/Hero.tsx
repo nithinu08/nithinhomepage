@@ -3,16 +3,18 @@ import profileImg from '../assets/PP.jpg'
 interface HeroProps {
   name: string
   tagline: string
+  subline: string
   githubUrl: string
   linkedinUrl: string
 }
 
-function Hero({ name, tagline, githubUrl, linkedinUrl }: HeroProps) {
+function Hero({ name, tagline, subline, githubUrl, linkedinUrl }: HeroProps) {
   return (
     <section className="hero">
       <img src={profileImg} alt={name} className="hero-avatar" />
       <h1>{name}</h1>
       <p>{tagline}</p>
+      <p>{subline}</p>
       <div className="hero-links">
         <a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a>
         <a href={linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>

@@ -328,3 +328,125 @@ body {
   left: 0;
   font-weight: 700;
 }
+
+.footer-stack {
+  list-style: none;
+  margin: 0.75rem 0 1.25rem;
+  padding: 0;
+}
+
+.footer-stack li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding-left: 1.1rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.footer-stack li::before {
+  content: '+';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.guest-access {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.guest-access-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.guest-access code {
+  font-family: var(--font-mono);
+  background: var(--surface);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+.guest-access-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 0.3rem;
+}
+
+.project-screenshot {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 0.75rem;
+}
+
+.screenshot-thumb-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-screenshot-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.screenshot-hint {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.2rem 0.5rem;
+  border-top-left-radius: 4px;
+}
+
+.screenshot-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 2rem;
+  cursor: zoom-out;
+}
+
+.project-screenshot-full {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  cursor: default;
+}
+
+.screenshot-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.5rem;
+}

@@ -8,5 +8,10 @@ export interface Project {
     live?: string
     code?: string
   }
+  guestAccess?: {
+    username: string
+    password: string
+    note?: string
+  }
+  screenshot?: string
 }
-

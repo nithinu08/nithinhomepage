@@ -9,7 +9,8 @@ function App() {
     <div className="app">
       <Hero
         name="Nithin"
-        tagline="Building things and breaking things, in that order"
+        tagline="Spent four years making sure a 40-year-old system never went down."
+        subline="Now applying that discipline to Kubernetes."
         githubUrl="https://github.com/nithinu08"
         linkedinUrl="https://www.linkedin.com/in/nithin-upadhyaya-19a808208/"
       />
